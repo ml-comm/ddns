@@ -8,9 +8,9 @@
 
     "target": {
         "MX": {
-            "name": "mail",
-            "value": "mail.mlcommunity.dev",
-            "priority": 10
+            "name": "@",
+            "value": "mail.mlcommunity.dev.",
+            "priority": 0
         },
         "TXT": [
             {
@@ -36,11 +36,17 @@
         },
         "SRV": {
             "name": "_autodiscover._tcp",
-            "value": "0 0 443 mail.mlcommunity.dev"
+            "priority": 0,
+            "weight": 0,
+            "port": 443,
+            "value": "mail.mlcommunity.dev."
         },
         "TLSA": {
             "name": "_25._tcp.mail",
-            "value": "3 1 1 334456ec12b87c14f5b978acfce4ba531bf02b0ae41ec8951ad6b7422184607d"
+            "usage": 3,
+            "selector": 1,
+            "matchingType": 1,
+            "certificate": "334456ec12b87c14f5b978acfce4ba531bf02b0ae41ec8951ad6b7422184607d"
         }
     },
 

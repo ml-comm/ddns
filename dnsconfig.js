@@ -55,6 +55,42 @@ for (var subdomain in allDomains) {
             commit.push(TXT(domainData.target.TXT.name === "@" ? subdomainName : domainData.target.TXT.name + "." + subdomainName, domainData.target.TXT.value));
         }
     }
+
+    // Handle MX records
+    if (domainData.target.MX) {
+        if (Array.isArray(domainData.target.MX)) {
+            for (var mx in domainData.target.MX) {
+                var mxRecord = domainData.target.MX[mx];
+                commit.push(MX(mxRecord.name, mxRecord.priority, mxRecord.value));
+            }
+        } else {
+            commit.push(MX(domainData.target.MX.name === "@" ? subdomainName : domainData.target.MX.name + "." + subdomainName, domainData.target.MX.priority, domainData.target.MX.value));
+        }
+    }
+
+    // Handle SRV records
+    if (domainData.target.SRV) {
+        if (Array.isArray(domainData.target.SRV)) {
+            for (var srv in domainData.target.SRV) {
+                var srvRecord = domainData.target.SRV[srv];
+                commit.push(SRV(srvRecord.name, srvRecord.priority, srvRecord.weight, srvRecord.port, srvRecord.value));
+            }
+        } else {
+            commit.push(SRV(domainData.target.SRV.name === "@" ? subdomainName : domainData.target.SRV.name + "." + subdomainName, domainData.target.SRV.priority, domainData.target.SRV.weight, domainData.target.SRV.port, domainData.target.SRV.value));
+        }
+    }
+
+    // Handle TLSA records
+    if (domainData.target.TLSA) {
+        if (Array.isArray(domainData.target.TLSA)) {
+            for (var tlsa in domainData.target.TLSA) {
+                var tlsaRecord = domainData.target.TLSA[tlsa];
+                commit.push(TLSA(tlsaRecord.name, tlsaRecord.usage, tlsaRecord.selector, tlsaRecord.matchingType, tlsaRecord.certificate));
+            }
+        } else {
+            commit.push(TLSA(domainData.target.TLSA.name === "@" ? subdomainName : domainData.target.TLSA.name + "." + subdomainName, domainData.target.TLSA.usage, domainData.target.TLSA.selector, domainData.target.TLSA.matchingType, domainData.target.TLSA.certificate));
+        }
+    }
 }
 
 // *.mx.mlcommunity.dev
