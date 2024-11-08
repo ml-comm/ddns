@@ -25,14 +25,7 @@
                 "name": "@",
                 "value": "v=DMARC1; ruf=mailto:postmaster@mlcommunity.dev"
             }
-        ],
-        "SRV": {
-            "name": "_autodiscover._tcp",
-            "priority": 0,
-            "weight": 0,
-            "port": 443,
-            "value": "mail.mlcommunity.dev."
-        }
+        ]
     },
 
     "proxied": false
