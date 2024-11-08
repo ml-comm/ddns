@@ -14,6 +14,13 @@
         "AAAA": {
             "name": "mail",
             "value": ["2a01:4f8:1c1e:d215::1"]
+        },
+        "TLSA": {
+            "name": "_25._tcp.mail",
+            "usage": 3,
+            "selector": 1,
+            "matchingType": 1,
+            "certificate": "334456ec12b87c14f5b978acfce4ba531bf02b0ae41ec8951ad6b7422184607d"
         }
     },
 
