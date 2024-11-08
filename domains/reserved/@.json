@@ -42,7 +42,7 @@
         },
         "AAAA": {
             "name": "mail",
-            "value": "2a01:4f8:1c1e:d215::1"
+            "value": ["2a01:4f8:1c1e:d215::1"]
         },
         "SRV": {
             "name": "_autodiscover._tcp",
