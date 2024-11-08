@@ -7,16 +7,6 @@
     },
 
     "target": {
-        "CNAME": [
-            {
-                "name": "autoconfig",
-                "value": "mail.mlcommunity.dev"
-            },
-            {
-                "name": "autodiscover",
-                "value": "mail.mlcommunity.dev"
-            }
-        ],
         "MX": {
             "name": "mail",
             "value": "mail.mlcommunity.dev",
@@ -28,11 +18,11 @@
                 "value": "v=DKIM1;k=rsa;t=s;s=email;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtshSw/jjyybXeamiHXa7w+ilo6i13W8Agy1WY/P3+f668REENxsUC9xEMy0qhYcibRri03qLQUHG9MhQyBqqV+TpJMRB7FCcQ3LjqJYqL+9jUjCwh6DOhKPRcIw049HIJSx6Yg8ugtog1lKp4veG0Ajg9HGFOP7ED2nKz2Hg3kJdeuoHJhrfClm/2+8X4idBtVre2SAYQIfKytZ6neki3SJ2VNTyNhA6NGNnLkPKfPkyxpIPDa6GkZSMvltGJ099940XSIT1s/tzmhsapChRjHjQv64zRnBVaVtWF3bzddoleo3fNMh43OoYRbQlLgTgR8uWinbZnU8VF8eQDPbZrQIDAQAB"
             },
             {
-                "name": "mlcommunity.dev",
+                "name": "@",
                 "value": "v=spf1 +a +mx -all"
             },
             {
-                "name": "mlcommunity.dev",
+                "name": "@",
                 "value": "v=DMARC1; ruf=mailto:postmaster@mlcommunity.dev"
             }
         ],
