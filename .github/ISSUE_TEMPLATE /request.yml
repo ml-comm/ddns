@@ -1,0 +1,57 @@
+name: New Subdomain Request
+description: >-
+  
+title: '[REQUEST]: '
+labels:
+  - request
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe your request
+      description: A clear and concise description of why do you need a "XYZ.mlcommunity.dev" domain
+    validations:
+      required: true
+  - type: input
+    id: subdomain
+    attributes:
+      label: Subdomain
+      description: >-
+        The subdomain you are requesting. For example, if you want "example.mlcommunity.dev", the subdomain is "example".
+
+        Please note that the subdomain must be in lowercase and contain only alphanumeric characters and hyphens. And, it should not already exist in the ddns repo.
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      description: >-
+        Please describe the purpose of the subdomain. For example, "I want to host a personal blog on this subdomain."
+  - type: textarea
+    id: project
+    attributes:
+      label: Project repository link (if any)
+      description: >-
+        If this subdomain is for a project, please provide a link to the project repository.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here.
+
+  - type: textarea
+    id: socials
+    attributes:
+      label: Socials
+      description: >-
+        Please provide your social media handles (GitHub, Twitter, LinkedIn, etc.) so that we can reach out to you.
+      placeholder: |
+        GitHub: @username
+        Twitter: @username
+        LinkedIn: @username
+        Email: hi@email.xyz
+    validations:
+      required: true
