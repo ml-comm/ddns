@@ -58,7 +58,7 @@ for (var subdomain in allDomains) {
 }
 
 // *.mx.mlcommunity.dev
-commit.push(IGNORE("*", "MX", "*"));
+// commit.push(IGNORE("*", "MX", "*"));
 
 // Commit all DNS records
 D("mlcommunity.dev", NewRegistrar("none"), DnsProvider(NewDnsProvider("cloudflare")), commit);
