@@ -1,4 +1,3 @@
-<p align="center"><img src="https://github.com/is-a-good-dev/register/blob/main/logo_circle.png" height="96" width="96"></p>
 <h1 align="center">mlcommunity.dev</h1>
 
 <p align="center">
@@ -6,7 +5,7 @@ A free subdomain provider for the Machine Learning community 🚀
 </p>
 
 ## Register
-Please read the [documentation](https://docs.is-a-good.dev) to register a new domain manually.
+Please read the [documentation](https://ddns.mlcommunity.dev) about how to register a subdomain.
 ---
 
 Your pull request **will not** be merged if:
