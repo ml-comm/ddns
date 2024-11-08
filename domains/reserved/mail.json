@@ -16,7 +16,7 @@
             "value": ["2a01:4f8:1c1e:d215::1"]
         },
         "TLSA": {
-            "name": "_25._tcp.mail",
+            "name": "_25._tcp",
             "usage": 3,
             "selector": 1,
             "matchingType": 1,
