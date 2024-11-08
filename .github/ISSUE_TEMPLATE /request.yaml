@@ -1,6 +1,6 @@
 name: New Subdomain Request
 description: >-
-  
+  Request a new subdomain on the ML Community domain.
 title: '[REQUEST]: '
 labels:
   - request
