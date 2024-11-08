@@ -1,0 +1,17 @@
+{
+    "repo": "https://github.com/bravo68web/bravo68web.github.io",
+
+    "owner": {
+        "username": "bravo68web",
+        "email": "hi@b68.dev"
+    },
+
+    "target": {
+        "CNAME": {
+            "name": "bravo68web",
+            "value": "bravo68web.github.io"
+        }
+    },
+
+    "proxied": true
+}

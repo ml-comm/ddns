@@ -1,0 +1,17 @@
+{
+    "repo": "https://github.com/ML-comm/ddns",
+
+    "owner": {
+        "username": "ml-comm",
+        "email": "admin@mlcommunity.dev"
+    },
+
+    "target": {
+        "CNAME": {
+            "name": "demo",
+            "value": "ml-comm.github.io"
+        }
+    },
+
+    "proxied": true
+}
