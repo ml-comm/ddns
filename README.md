@@ -6,7 +6,7 @@ A free subdomain provider for the Machine Learning community 🚀
 
 ## Register
 
-Please read the [documentation](https://ddns.mlcommunity.dev) about how to register a subdomain.
+Please read the [documentation](https://ml-comm.github.io/ddns/) about how to register a subdomain.
 
 ---
 
