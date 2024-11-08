@@ -1,9 +1,9 @@
 name: New Subdomain Request
-description: >-
-  Request a new subdomain on the ML Community domain.
+description: Request a new subdomain on the ML Community domain.
 title: '[REQUEST]: '
-labels:
-  - request
+labels: [
+  "request"
+]
 body:
   - type: textarea
     id: description
@@ -16,10 +16,7 @@ body:
     id: subdomain
     attributes:
       label: Subdomain
-      description: >-
-        The subdomain you are requesting. For example, if you want "example.mlcommunity.dev", the subdomain is "example".
-
-        Please note that the subdomain must be in lowercase and contain only alphanumeric characters and hyphens. And, it should not already exist in the ddns repo.
+      description: The subdomain you are requesting. For example, if you want "example.mlcommunity.dev", the subdomain is "example". Please note that the subdomain must be in lowercase and contain only alphanumeric characters and hyphens. And, it should not already exist in the ddns repo.
     validations:
       required: true
   - type: textarea
@@ -41,7 +38,6 @@ body:
     attributes:
       label: Additional context
       description: Add any other context about the problem here.
-
   - type: textarea
     id: socials
     attributes:
