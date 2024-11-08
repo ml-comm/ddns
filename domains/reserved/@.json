@@ -26,27 +26,12 @@
                 "value": "v=DMARC1; ruf=mailto:postmaster@mlcommunity.dev"
             }
         ],
-        "A": {
-            "name": "mail",
-            "value": ["159.69.207.25"]
-        },
-        "AAAA": {
-            "name": "mail",
-            "value": ["2a01:4f8:1c1e:d215::1"]
-        },
         "SRV": {
-            "name": "_autodiscover._tcp.mlcommunity.dev",
+            "name": "_autodiscover._tcp",
             "priority": 0,
             "weight": 0,
             "port": 443,
             "value": "mail.mlcommunity.dev."
-        },
-        "TLSA": {
-            "name": "_25._tcp.mail.mlcommunity.dev",
-            "usage": 3,
-            "selector": 1,
-            "matchingType": 1,
-            "certificate": "334456ec12b87c14f5b978acfce4ba531bf02b0ae41ec8951ad6b7422184607d"
         }
     },
 

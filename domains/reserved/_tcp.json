@@ -1,0 +1,20 @@
+{
+    "repo": "https://github.com/ML-comm/ddns",
+
+    "owner": {
+        "username": "ml-comm",
+        "email": "admin@mlcommunity.dev"
+    },
+
+    "target": {
+        "SRV": {
+            "name": "_autodiscover",
+            "priority": 0,
+            "weight": 0,
+            "port": 443,
+            "value": "mail.mlcommunity.dev."
+        }
+    },
+
+    "proxied": false
+}
