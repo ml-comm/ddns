@@ -1,9 +1,7 @@
 ---
-layout: default
-title: Format types
-nav_order: 2
+outline: deep
 ---
-# Formats
+# Formats <Badge type="danger" text="DNS" />
 
 Following the specific JSON format is important as it allows us to easily process your domain without any issues. If the correct format is not followed, you will be told and the pull request will **not** be merged. 
 
