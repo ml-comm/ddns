@@ -27,5 +27,4 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/ml-comm/ddns' }
     ],
   },
-  base: "/ddns/",
 })
