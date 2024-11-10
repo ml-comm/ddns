@@ -9,7 +9,7 @@ This guide explains how to get a free `*.mlcommunity.dev` subdomain for your mac
 2. **Create a Configuration File:**
    - In your forked repository, create a new JSON file inside the `domains` directory.
    - Name the file after your desired subdomain (e.g., `my-project.json` for `my-project.mlcommunity.dev`).  The full path would be `domains/my-project.json`.
-   - **Important:**  See the [format documentation](FORMAT.md) for the required JSON structure.  Double-check your file for accuracy.
+   - **Important:**  See the [format documentation](format.md) for the required JSON structure.  Double-check your file for accuracy.
 
 3. **Request Your Subdomain:** Open an issue on the main ddns repository using the [request template](https://github.com/ml-comm/ddns/issues/new?assignees=&labels=request&projects=&template=REQUEST.yml&title=%5BREQUEST%5D%3A+).  Discuss your desired subdomain and any specific needs.  This allows us to review and approve your request.
 
