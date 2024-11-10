@@ -1,35 +1,35 @@
 function getDomainsList(filesPath) {
-    var result = [];
-    var files = glob.apply(null, [filesPath, true, ".json"]);
+    let result = [];
+    let files = glob(filesPath, true, ".json");
 
-    for (var i = 0; i < files.length; i++) {
-        var name = files[i].split("/").pop().replace(/\.json$/, "");
+    for (const element of files) {
+        let name = element.split("/").pop().replace(/\.json$/, "");
 
-        result.push({ name: name, data: require(files[i]) });
+        result.push({ name: name, data: require(element) });
     }
 
     return result;
 }
 
-var allDomains = getDomainsList("./domains");
+let allDomains = getDomainsList("./domains");
 
-var commit = [];
+let commit = [];
 
-for (var subdomain in allDomains) {
-    var subdomainName = allDomains[subdomain].name;
-    var domainData = allDomains[subdomain].data;
-    var proxyState = domainData.proxied ? { cloudflare_proxy: "on" } : { cloudflare_proxy: "off" };
+for (let subdomain in allDomains) {
+    let subdomainName = allDomains[subdomain].name;
+    let domainData = allDomains[subdomain].data;
+    let proxyState = domainData.proxied ? { cloudflare_proxy: "on" } : { cloudflare_proxy: "off" };
 
     // Handle A records
     if (domainData.target.A) {
-        for (var a in domainData.target.A.value) {
+        for (let a in domainData.target.A.value) {
             commit.push(A(domainData.target.A.name, IP(domainData.target.A.value[a]), proxyState));
         }
     }
 
     // Handle AAAA records
     if (domainData.target.AAAA) {
-        for (var aaaa in domainData.target.AAAA.value) {
+        for (let aaaa in domainData.target.AAAA.value) {
             commit.push(AAAA(domainData.target.AAAA.name, domainData.target.AAAA.value[aaaa], proxyState));
         }
     }
@@ -47,8 +47,8 @@ for (var subdomain in allDomains) {
     // Handle TXT records
     if (domainData.target.TXT) {
         if (Array.isArray(domainData.target.TXT)) {
-            for (var txt in domainData.target.TXT) {
-                var txtRecord = domainData.target.TXT[txt];
+            for (let txt in domainData.target.TXT) {
+                let txtRecord = domainData.target.TXT[txt];
                 commit.push(TXT(txtRecord.name, txtRecord.value));
             }
         } else {
@@ -59,8 +59,8 @@ for (var subdomain in allDomains) {
     // Handle MX records
     if (domainData.target.MX) {
         if (Array.isArray(domainData.target.MX)) {
-            for (var mx in domainData.target.MX) {
-                var mxRecord = domainData.target.MX[mx];
+            for (let mx in domainData.target.MX) {
+                let mxRecord = domainData.target.MX[mx];
                 commit.push(MX(mxRecord.name, mxRecord.priority, mxRecord.value));
             }
         } else {
@@ -71,8 +71,8 @@ for (var subdomain in allDomains) {
     // Handle SRV records
     if (domainData.target.SRV) {
         if (Array.isArray(domainData.target.SRV)) {
-            for (var srv in domainData.target.SRV) {
-                var srvRecord = domainData.target.SRV[srv];
+            for (let srv in domainData.target.SRV) {
+                let srvRecord = domainData.target.SRV[srv];
                 commit.push(SRV(srvRecord.name, srvRecord.priority, srvRecord.weight, srvRecord.port, srvRecord.value));
             }
         } else {
@@ -83,8 +83,8 @@ for (var subdomain in allDomains) {
     // Handle TLSA records
     if (domainData.target.TLSA) {
         if (Array.isArray(domainData.target.TLSA)) {
-            for (var tlsa in domainData.target.TLSA) {
-                var tlsaRecord = domainData.target.TLSA[tlsa];
+            for (let tlsa in domainData.target.TLSA) {
+                let tlsaRecord = domainData.target.TLSA[tlsa];
                 commit.push(TLSA(tlsaRecord.name, tlsaRecord.usage, tlsaRecord.selector, tlsaRecord.matchingType, tlsaRecord.certificate));
             }
         } else {
