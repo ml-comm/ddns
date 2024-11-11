@@ -1,15 +1,15 @@
 {
-    "repo": "https://github.com/ML-comm/ddns",
+    "repo": "https://github.com/Anushka-codergirl/MLHajipur",
 
     "owner": {
-        "username": "ml-hajipur",
+        "username": "Anushka-codergirl",
         "email": "hajipur@mlcommunity.dev"
     },
 
     "target": {
         "CNAME": {
             "name": "hajipur",
-            "value": "ml-comm.github.io"
+            "value": "Anushka-codergirl.github.io"
         }
     },
 
