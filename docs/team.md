@@ -19,7 +19,7 @@ const members = [
     ]
   },
   {
-    avatar: 'https://github.com/BRAVO68WEB.png',
+    avatar: 'https://s.b68.dev/logo',
     name: 'Jyotirmoy Bandyopadhayaya',
     title: 'Project Maintainer',
     links: [
