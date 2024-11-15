@@ -26,6 +26,14 @@ body:
       description: >-
         Please describe the purpose of the subdomain. For example, "I want to host a personal blog on this subdomain."
   - type: textarea
+    id: website_url
+    attributes:
+      label: Current website URL
+      description: >-
+        Provide your current community or project website URL.
+    validations:
+      required: true
+  - type: textarea
     id: project
     attributes:
       label: Project repository link (if any)
