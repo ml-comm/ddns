@@ -1,0 +1,17 @@
+{
+    "repo": "https://github.com/TFUG-Ghaziabad/TFUG-Ghaziabad",
+
+    "owner": {
+        "username": "AniketRajSingh",
+        "email": "ghaziabad@mlcommunity.dev"
+    },
+
+    "target": {
+        "A": {
+            "name": "ghaziabad",
+            "value": ["35.206.91.233"]
+        }
+    },
+
+    "proxied": true
+}
