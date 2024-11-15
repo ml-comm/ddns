@@ -1,5 +1,5 @@
 {
-    "repo": "https://github.com/ML-comm/ddns",
+    "repo": "https://github.com/TFUG-Ghaziabad/TFUG-Ghaziabad",
 
     "owner": {
         "username": "AniketRajSingh",
@@ -7,7 +7,7 @@
     },
 
     "target": {
-        "CNAME": {
+        "A": {
             "name": "ghaziabad",
             "value": ["35.206.91.233"]
         }
