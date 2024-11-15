@@ -1,0 +1,17 @@
+{
+    "repo": "https://github.com/ML-comm/ddns",
+
+    "owner": {
+        "username": "tfugghaziabad",
+        "email": "ghaziabad@mlcommunity.dev"
+    },
+
+    "target": {
+        "A": {
+            "name": "tfugghaziabadhome",
+            "value": ["35.209.31.43"]
+        }
+    },
+
+    "proxied": false
+}
