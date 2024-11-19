@@ -1,0 +1,14 @@
+{
+  "repo": "https://github.com/MLBhopal/ML-Bhopal-Website",
+  "owner": {
+    "username": "MLBhopal",
+    "email": "Bhopal@mlcommunity.dev"
+  },
+  "target": {
+    "CNAME": {
+       "name": "bhopal",
+       "value": "ml-bhopal-website.vercel.app"
+     }
+  },
+  "proxied": false
+}
