@@ -7,7 +7,7 @@
   "target": {
     "CNAME": {
        "name": "bhopal",
-       "value": "mlbhopal.pages.dev/"
+       "value": "ml-bhopal-website.vercel.app"
      }
   },
   "proxied": false
